@@ -1,9 +1,6 @@
 # Lighthouse iOS SDK
-==================
-
 
 ## Getting Started
-
 The Lighthouse SDK allows you to contextually enable your application.
 
 ## Requirements
