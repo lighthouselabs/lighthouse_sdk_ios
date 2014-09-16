@@ -30,6 +30,12 @@ Navigator to the Linked Frameworks and Libraries area
   4. If `CoreLocation.framework` is not listed in the Linked Frameworks and Libraries area, click + and select it in the dialog
   5. If `CoreBluetooth.framework` is not listed in the Linked Frameworks and Libraries area, click + and select it in the dialog
 
-5. In your Application Delegate:
+5. Add -ObjC to Other Linker Flags for your project
+  1. Select your Project in the Project Navigator
+  2. Select the target you want to enable the SDK for
+  3. Select the Build Settings tab
+  4. In the Linking section add -ObjC to Other Linker Flags
+
+6. In your Application Delegate:
   1. Import Lighthouse: `#import <Lighthouse/Lighthouse.h>`
   2. In your `-application:didFinishLaunchingWithOptions:` method, initialise Lighthouse with your Client Key and Secret.
