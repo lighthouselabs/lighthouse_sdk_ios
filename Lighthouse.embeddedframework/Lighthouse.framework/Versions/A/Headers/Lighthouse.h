@@ -30,6 +30,13 @@
 + (Lighthouse *)initWithClientKey:(NSString *)clientKey secretKey:(NSString *)secretKey environment:(LighthouseEnvironment)env;
 
 /**
+ *  Convenience method to access the initialised Lighthouse object.
+ *
+ *  @return Initialized Lighthouse object, or nil if not yet initialized.
+ */
++ (Lighthouse *)sharedInstance;
+
+/**
  *  Lighthouse requires access to location services. This method allows for a better user experience
  *  as you can control the timing of this iOS prompt - it is suggested that before calling this method you 
  *  present the user with an explanation for why location services are needed. Once location services are 
