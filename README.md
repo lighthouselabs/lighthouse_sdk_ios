@@ -10,7 +10,7 @@ The Lighthouse SDK requires iOS 7.0 or above running on iPhone 4S or newer and t
 ## Integration
 
 1. Add the files to your project: File -> Add Files to "your project name"
-  1. Find and select `Lighthouse.embeddedframework`
+  1. Find and select `Lighthouse.framework`
   2. Make sure that Copy items into destination folder (if needed) is checked
   3. Set Folders to Create groups for any added folders
   4. Select all targets that you want to add the SDK to
