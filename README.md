@@ -39,3 +39,21 @@ Navigator to the Linked Frameworks and Libraries area
 6. In your Application Delegate:
   1. Import Lighthouse: `#import <Lighthouse/Lighthouse.h>`
   2. In your `-application:didFinishLaunchingWithOptions:` method, initialise Lighthouse with your Client Key and Secret.
+
+## Location
+
+When you've given your location pitch and you're happy for the user to be prompted to share their location go ahead and tell Lighthouse.
+
+`[[Lighthouse sharedInstance] requestLocationAccess];`
+
+NB. Lighthouse requires "Always" permission and you will need to add NSLocationAlwaysUsageDescription to your info.plist for this.
+
+## Notifications
+
+In order for Lighthouse to send notifications to your users you will need to request their permission (iOS 8 onwards).
+
+```
+if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]){
+  [application registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeBadge|UIUserNotificationTypeSound categories:nil]];
+}
+```
