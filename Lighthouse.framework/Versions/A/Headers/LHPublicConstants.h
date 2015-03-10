@@ -23,4 +23,9 @@ typedef NS_ENUM(NSUInteger, LighthouseEnvironment) {
 
 @interface LHPublicConstants : NSObject
 
+/**
+* Returns the NSString representation of the Lighthouse environment.
+*/
++ (NSString *)stringForLhEnv:(LighthouseEnvironment)env;
+
 @end

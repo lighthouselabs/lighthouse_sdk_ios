@@ -23,12 +23,15 @@ The Lighthouse SDK requires iOS 7.0 or above running on iPhone 4S or newer and t
 3. If `Lighthouse.framework` is not listed, drag and drop the library from your Project
 Navigator to the Linked Frameworks and Libraries area
 
-4. Verify that CoreBluetooth.framework and CoreLocation.framework has been added to the Linked Frameworks and Libraries for the targets you want to use the SDK with
+4. Verify that the required frameworks have been added to the Linked Frameworks and Libraries for the targets you want to use the SDK with
   1. Select your Project in the Project Navigator
   2. Select the target you want to enable the SDK for
   3. Select the General tab
-  4. If `CoreLocation.framework` is not listed in the Linked Frameworks and Libraries area, click + and select it in the dialog
-  5. If `CoreBluetooth.framework` is not listed in the Linked Frameworks and Libraries area, click + and select it in the dialog
+  4. If the following frameworks are not listed in the Linked Frameworks and Libraries area, for each framework click + and select them in the dialog
+    * `CoreLocation.framework`
+    * `CoreBluetooth.framework`
+    * `SystemConfiguration.framework`
+    * `libsqlite3.dylib`
 
 5. Add -ObjC to Other Linker Flags for your project
   1. Select your Project in the Project Navigator
